@@ -1,4 +1,4 @@
-package varable.practice;
+package com.kh.practice;
 
 public class Practice3 {
 }
