@@ -1,5 +1,6 @@
 package com.kh.practice.condition;
 
+import java.lang.invoke.SwitchPoint;
 import java.util.Scanner;
 
 public class Practice1 {
@@ -114,7 +115,8 @@ public class Practice1 {
     }
 
     public void method10() {
-        while (true) {
+        boolean flag = true;
+        while (flag) {
             System.out.println("실행할 기능을 선택하세요.");
             System.out.println("1. 메뉴 출력");
             System.out.println("2. 짝수/홀수");
@@ -155,11 +157,35 @@ public class Practice1 {
                     break;
                 case 0:
                     System.out.println("프로그램을 종료합니다.");
-                    return;
+                    flag = false;
                 default:
                     System.out.println("잘못된 입력입니다. 다시 선택해주세요.");
                     break;
             }
+        }
+    }
+
+    public void method6() {
+        System.out.print("권한을 확인하고자 하는 회원 등급 : ");
+        String inputGrade = sc.nextLine();
+
+
+        String r1 = "회원 관리 ";
+        String r2 = "게시글 관리 ";
+        String r3 = "게시글 작성 ";
+        String r4 = "게시글 조회 ";
+        String r5 = "댓글 작성 ";
+
+        switch (inputGrade) {
+            case "관리자":
+                System.out.println(r1 + r2 + r3 + r4 + r5);
+                break;
+            case "회원":
+                System.out.println(r3 + r4 + r5);
+                break;
+            case "비회원":
+                System.out.println(r5);
+                break;
         }
     }
 }
