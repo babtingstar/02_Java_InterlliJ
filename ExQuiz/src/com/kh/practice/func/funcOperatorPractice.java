@@ -182,10 +182,31 @@ public class funcOperatorPractice {
         double num2_in = num2*(1+0);
         double num3_in = num3*(1+0.15);
 
-        boolean bool_num1_in =
+        String str_num1_in;
+        String str_num2_in;
+        String str_num3_in;
+
+        if(num1_in>= 3000){
+            str_num1_in = "3000 이상";
+        } else {
+            str_num1_in = "3000 미만";
+        }
+        if(num2_in>= 3000){
+            str_num2_in = "3000 이상";
+        } else {
+            str_num2_in = "3000 미만";
+        }
+        if(num3_in>= 3000){
+            str_num3_in = "3000 이상";
+        } else {
+            str_num3_in = "3000 미만";
+        }
 
 
-        System.out.print("A사원 연봉 / 연봉+a : " +num1+"/"+num1_in+"\n"+bool_num1_in);
+
+        System.out.print("A사원 연봉 / 연봉+a : " +num1+"/"+num1_in+"\n"+str_num1_in);
+        System.out.print("B사원 연봉 / 연봉+a : " +num2+"/"+num2_in+"\n"+str_num2_in);
+        System.out.print("C사원 연봉 / 연봉+a : " +num1+"/"+num3_in+"\n"+str_num3_in);
 
 
     }

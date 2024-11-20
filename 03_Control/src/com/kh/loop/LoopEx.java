@@ -1,8 +1,8 @@
-package com.kh.loof;
+package com.kh.loop;
 
 import java.util.Scanner;
 
-public class LoofEx {
+public class LoopEx {
     // 필드 = 변수명
 
     // 앞으로 만드는 public void 기능명(method){}

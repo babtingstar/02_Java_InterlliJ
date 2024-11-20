@@ -9,6 +9,6 @@ public class Practice1Run {
 //        System.out.println("=== 홀짝 ===");
 //        practice1.method2();
         System.out.println("=== 로그인 ===");
-        practice1.method3();
+        practice1.method10();
     }
 }

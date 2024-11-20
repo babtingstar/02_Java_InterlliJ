@@ -1,8 +1,8 @@
-package com.kh.loof;
+package com.kh.loop;
 
 import java.util.Scanner;
 
-public class LoofEx2 {
+public class LoopEx2 {
     Scanner sc = new Scanner(System.in);
 
     /*

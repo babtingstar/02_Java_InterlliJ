@@ -1,20 +1,22 @@
-package com.kh.loof;
+package com.kh.loop;
 
-public class LoofRun {
+public class LoopRun {
     public static void main(String[] args) {
-        LoofEx l1 = new LoofEx();
-        LoofEx2 l2 = new LoofEx2();
+        LoopEx l1 = new LoopEx();
+        LoopEx2 l2 = new LoopEx2();
 //        l1.method1();
 //        l1.method2();
 //        l1.method3();
 //        l1.method4();
 //        l2.while1();
 //        l2.while2();
-            l2.while3();
+//        l2.while3();
+
+
     }
 
     public void abc() {
-        LoofEx l = new LoofEx();
+        LoopEx l = new LoopEx();
         l.method1();
     }
 
