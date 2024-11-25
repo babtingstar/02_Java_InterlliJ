@@ -1,0 +1,23 @@
+문제 설명
+
+1. Book class
+String title, Stirng author, int price
+
+2. Ebook class
+extends book
+String fileSize
+
+3. PrintBook class
+extends book
+int shippingCost
+
+4. BookRun class
+ebook
+title : 자바프로그래밍
+author : 홍길동
+price : 20000
+
+printbook
+title : python
+author : 이영희
+price : 180000
