@@ -12,6 +12,9 @@ public class Book {
         this.price = price;
     }
 
+    public Book(String title, String author, int price) {
+    }
+
     public String getAuthor() {
         return author;
     }

@@ -74,5 +74,19 @@ public class ArrayListPre1 {
         charList.add('b');
         charList.add('나');
         System.out.println("charList : " + charList);
+
+        // 논리타입 제한
+        ArrayList<Boolean> boolList = new ArrayList<Boolean>();
+        boolList.add(true);
+        boolList.add(false);
+        System.out.println("boolList : " + boolList);
+
+        // 실수타입 제한
+        ArrayList<Double> doubleList = new ArrayList<Double>();
+        doubleList.add(1.5);
+        doubleList.add(3.14);
+        System.out.println("doubleList : " + doubleList);
     }
+
+
 }

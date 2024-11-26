@@ -13,6 +13,6 @@ public class ArrayListRun1 {
 
 //        list.method2();
 
-        list.method3();
+//        list.method3();
     }
 }

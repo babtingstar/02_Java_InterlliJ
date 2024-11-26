@@ -58,4 +58,14 @@ public class Book_Service {
 
     }
 
+    private ArrayList<Book> bookList = new ArrayList<>();
+
+    public void addBook(String title, String author, int price){
+        Book b1 = new Book(title, author, price);
+        bookList.add(b1);
+        // bookList.add(new Book(title, author, price));
+        System.out.println(bookList);
+        System.out.println("책이 성공적으로 추가되었습니다.");
+    }
+
 }
