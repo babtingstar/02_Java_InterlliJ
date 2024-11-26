@@ -1,25 +1,15 @@
-package com.kh.poly.pack2.bookPre;
+package com.kh.CollectionEx.pack1.listEx;
 
 public class Book {
-    private String title;
     private String author;
     private int price;
 
     public Book() {
     }
 
-    public Book(String title, String author, int price) {
-        this.title = title;
+    public Book(String author, int price) {
         this.author = author;
         this.price = price;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
     }
 
     public String getAuthor() {
@@ -41,8 +31,7 @@ public class Book {
     @Override
     public String toString() {
         return "Book{" +
-                "title='" + title + '\'' +
-                ", author='" + author + '\'' +
+                "author='" + author + '\'' +
                 ", price=" + price +
                 '}';
     }
