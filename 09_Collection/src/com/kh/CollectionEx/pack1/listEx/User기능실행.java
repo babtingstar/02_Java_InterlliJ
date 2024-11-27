@@ -1,39 +1,36 @@
 package com.kh.CollectionEx.pack1.listEx;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ClothingStoreRun {
+public class User기능실행 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ClothingStore clothingStore = new ClothingStore();
+        User기능 userStore = new User기능();
 
         while (true) {
-            System.out.println("\n 쇼핑몰 관리 프로그램 ");
-            System.out.println("1. 옷 추가");
-            System.out.println("2. 옷 목록");
-            System.out.println("3. 옷 제거");
+            System.out.println("\n---사용자 관리 프로그램---");
+            System.out.println("1. 사용자 추가");
+            System.out.println("2. 추가된 유저 목록 모두 조회");
+            System.out.println("3. 추가된 유저 삭제");
             System.out.println("4. 프로그램 종료");
-
             System.out.println("메뉴 선택 : ");
             int choice = sc.nextInt();
             sc.nextLine();
 
             switch (choice) {
                 case 1:
-                    clothingStore.AddClothing();
+                    userStore.addUser();
                     break;
                 case 2:
-                    clothingStore.AllClothing();
+                    userStore.allUsers();
                     break;
                 case 3:
-                    clothingStore.removeClothing();
-                    break;
+                    userStore.removeUser();
+                    return;
                 case 4:
-                    System.out.println("프로그램을 종료합니다.");
                     return;
                 default:
-                    break;
+                    System.out.println("잘못 입력했습니다.");
             }
         }
     }

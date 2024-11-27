@@ -68,4 +68,21 @@ public class Book_Service {
         System.out.println("책이 성공적으로 추가되었습니다.");
     }
 
+    public void removeBook(String title){
+        boolean found = false;
+
+        for (int i = 0; i < bookList.size(); i++) {
+//            if(bookList.get(i).getTitle().equals(title)){
+//                bookList.remove(i);
+//                System.out.println("책이 성공적으로 삭제되었습니다 : " + title);
+//                found = true;
+//                break;
+//            }
+        }
+
+        if(!found){
+            System.out.println("해당 제목의 책을 찾을 수 없ㅅ브니다 : " +title);
+        }
+
+    }
 }

@@ -3,12 +3,12 @@ package com.kh.CollectionEx.pack1.listEx;
 public class Clothing {
     private String name;
     private String category;
-    private int price;
+    private String price;
 
     public Clothing() {
     }
 
-    public Clothing(String name, String category, int price) {
+    public Clothing(String name, String category, String price) {
         this.name = name;
         this.category = category;
         this.price = price;
@@ -30,11 +30,11 @@ public class Clothing {
         this.category = category;
     }
 
-    public int getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 

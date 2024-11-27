@@ -29,8 +29,8 @@ Collection (상위 인터페이스)
  │     ├── LinkedList : 데이터를 수정 빠름 /
  │     └── Vector (Thread-Safe)
  ├── Set: 중복 없는 컬렉션
- │     ├── HashSet
- │     ├── TreeSet (정렬 지원)
+ │     ├── HashSet : 순서 x / 중복 제거 / 빠른 검색 속도 제공
+ │     ├── TreeSet (정렬 지원) / 정렬된 상태로 저장 / 삽입 및 삭제 속도가 HashSet 보다 느림 / 메모리 사용량 많음
  │     └── LinkedHashSet (삽입 순서 유지)
  └── Queue: 순서에 따라 처리되는 컬렉션
        ├── PriorityQueue (우선순위 큐)
