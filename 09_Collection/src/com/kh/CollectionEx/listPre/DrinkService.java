@@ -21,7 +21,7 @@ public class DrinkService {
     public void allDrinks() {
         if (!drinks.isEmpty()) {
             for (Drink drink : drinks) {
-                System.out.println(drink.getName());
+                System.out.println(drink);
             }
         } else {
             System.out.print("추가된 음료가 없습니다.");
@@ -30,15 +30,30 @@ public class DrinkService {
     }
 
     public void searchDrink(String searchName) {
+        boolean flag = true;
         for (int i = 0; i < drinks.size(); i++) {
             if (drinks.get(i).getName().equals(searchName)) {
-                System.out.println(drinks.get(i).getName());
+                System.out.println(drinks.get(i));
+                flag = false;
             }
         }
-
+        if (flag) {
+            System.out.println("해당 음료를 찾을 수 없습니다.");
+        }
     }
 
     public void searchDrink(int searchPrice) {
+        boolean flag = true;
+        for (int i = 0; i < drinks.size(); i++) {
+            if (drinks.get(i).getPrice() == searchPrice) {
+                System.out.println(drinks.get(i));
+                flag = false;
+
+            }
+        }
+        if (flag) {
+            System.out.println("해당 음료를 찾을 수 없습니다.");
+        }
 
     }
 

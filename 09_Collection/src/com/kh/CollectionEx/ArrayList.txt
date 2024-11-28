@@ -16,13 +16,13 @@ set(int index, E e) : 특정 인덱스의 요소를 새로운 값으로 변경
 
 get(int index) : 특정 인덱스의 요소를 반환
 
-size() : 리스트의 크기를 반환
+size() : 리스트의 크기를 반환 / int var = list.size()
 
-imEmpty() : 리스트가 비어있는지 확인
+isEmpty() : 리스트가 비어있는지 확인 / boolean var = list.isEmpty();
 
-contains(Object o) : 리스트에 특정 요소가 포함되어 있는지 확인
+contains(Object o) : 리스트에 특정 요소가 포함되어 있는지 확인 / boolean var = list.contains();
 
-indexOf(Object o) : 지정된 요소의 첫 번째 인덱스를 반환
+indexOf(Object o) : 지정된 요소의 첫 번째 인덱스를 반환 / int var = list.indexOf(value);
 
 clear() : 리스트의 모든 요소를 삭제
 
