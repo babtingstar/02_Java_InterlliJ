@@ -23,14 +23,29 @@ public class BookMenu {
     }
 
     public ArrayList<Book> selectList() {
+        for(int i = 0; i < books.size(); i++) {
+            System.out.println(books.get(i));
+        }
         return books;
     }
 
     public ArrayList<Book> searchBook(String bookTitle) {
-        return books;
+        for(int i = 0; i < books.size(); i++) {
+            if(books.get(i).getTitle().equals(bookTitle)) {
+                return books;
+            }
+        }
+        System.out.println("Book not found");
+        return null;
     }
 
     public Book deleteBook(String bookTitle, String author) {
+        for(int i = 0; i < books.size(); i++) {
+            if(books.get(i).getTitle().equals(bookTitle) && books.get(i).getAuthor().equals(author)) {
+                books.remove(i);
+
+            }
+        }
         return book;
     }
 
