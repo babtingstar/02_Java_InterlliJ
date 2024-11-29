@@ -2,7 +2,7 @@ package com.kh.example.practice7.model.vo;
 
 public class StudentController {
     Student[] sArr = new Student[5];
-    int CUT_LINE = 60;
+    public static int CUT_LINE = 60;
 
     public void StudentController() {
         Student sm1 = new Student("김길동", "자바", 100);
@@ -18,7 +18,7 @@ public class StudentController {
     };
 
     public Student[] printStudent() {
-        return null;
+        return sArr;
     }
 
     public int sumScore(){
@@ -34,10 +34,8 @@ public class StudentController {
     public double[] avgScore(){
         double[] avgScore = new double[2];
         avgScore[0] = sumScore();
-        avgScore[1] = sumScore()/;
+        avgScore[1] = avgScore[0]/sArr.length;
         return avgScore;
         }
-
-        return null;
     }
-}
+

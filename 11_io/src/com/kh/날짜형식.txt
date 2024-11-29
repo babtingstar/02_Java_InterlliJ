@@ -1,0 +1,29 @@
+기본 날짜 표기 방식 : 사람이 읽기 불편함 (1970 / 1 / 1 / 09 00 ~ N msec)
+
+Date : 현재 날짜와 시간을 간단히 표현한 경우
+       밀리초 단위로 시간 계산이 필요한 경우 사용
+       안전하지 않음
+
+SimpleDateFormat : 현재 날짜와 시간을 간단히 표현
+                   Date 객체의 업그레이드 버전
+                   안전하지 않음
+
+DateTimeFormatter : 자바 8 버전 이후로 주로 사용
+
+
+
+패턴 문자
+문자      설명                    example
+y         year                    yyyy : 2024 / yy 24
+M         Month(digit)            MM : 01, 02, 03 / M : 8, 9 / M -> MM : 10, 11, 12
+MMM       Month(short)            MMM : Jan, Feb, Mar
+MMMM      Month(long)             MMMM : January, February, March
+d         date                    d : 12, 13
+E         day(short)              E : Mon Tue Wed
+EEEE      day(long)               EEEE : Monday Tuesday Wednesday
+H         hour(24)                HH : 01, 13, 23
+h         hour(12)                hh : 01, 08, 12
+m         minutes                 mm : 20, 45, 59
+s         seconds                 ss : 20, 45, 59
+AM        anterior / posterior    AM / PM
+          GreenWitch Mean Time    GMT+09:00
