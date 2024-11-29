@@ -1,8 +1,6 @@
 package com.kh.pack2;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 public class FileReadWrite {
 
@@ -66,5 +64,56 @@ public class FileReadWrite {
         } catch (IOException e) {
             System.out.println("add failed");
         }
+    }
+
+    // 만들어진 파일을 읽고 눈으로 어떤 내용이 작성되어 있는지 확인
+    /*
+    FileReader : 파일로부터 문자 데이터를 읽어들이는클래스 // 한 글자 단위
+    BufferedReader : FileReader 에 버퍼링 기능 추가한 클래스 // 한 줄 단위
+                     줄 단위로 데이터를 읽을 수 있어 빠르고 성능이 좋음
+     */
+    public void method3() {
+
+        String path = System.getProperty("user.home") + "/바탕 화면/ex1.txt";
+        try {
+            FileReader file = new FileReader(path);
+            BufferedReader br = new BufferedReader(file); // 한줄 단위로 읽는 부스터
+            String line; // 한 줄씩 읽어오는 readLine();
+
+            while ((line = br.readLine()) != null) { //반복문을 이용해서 반복
+                System.out.println(line);
+            }
+            br.close(); // 한 줄씩 읽는 것 부터 종료
+            file.close(); // 한 글자씩 가져오는 객체 종료
+
+            /*
+            FileReader 가 읽는 것이 느리기 때문에 BufferedReader 가 빠르게 읽을 수 있도록 도와줌
+            FileReader 를 도와주기 위해 생성된 Bufferedreader 를 먼저 종료시키고, FileReader 를 종료시키는 것
+             */
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public void method4() {
+        String path = System.getProperty("user.home") + "/바탕 화면/ex1.txt";
+        try {
+            FileReader file = new FileReader(path);
+            BufferedReader br = new BufferedReader(file);
+            String line;
+
+            while ((line = br.readLine()) != null) { // line 한줄 담기고
+                System.out.println(line); // line 출력 다음,
+                // 다음줄이 없을 때 까지 출력을 진행
+            }
+            // 복사기에서 5페이지를 출력하기 위해 1페이지 출력하고 2페이지를 출력하는 것과 같은 형식
+            br.close();
+            file.close();
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 }
